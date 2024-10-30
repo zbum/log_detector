@@ -61,7 +61,7 @@ func main() {
 			ctx1 := context.Background()
 			subCtx1, _ := context.WithTimeout(ctx1, 3*time.Second)
 			doorayErr := dooray.PostWebhookContext(subCtx1, flags.HookUrl, &dooray.WebhookMessage{
-				BotName: "[outgoing-proxy] ",
+				BotName: "[log_detector] ",
 				Text:    fmt.Sprintf("[DETECT PATTERN: %s] %s", flags.Pattern, line.Text),
 			})
 
