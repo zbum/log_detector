@@ -1,3 +1,4 @@
 .idea
 log_detector.iml
 *.iml
+build/release
